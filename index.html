@@ -1,54 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Psychic Game(Basic)</title>
-	
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- My CSS -->
+	<title>Crystal Collector - Homework 4</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
 </head>
-<body background= assets/images/BG_Psiquico.png>
-<header>
-	<div class="page-header">
-	  <h1>The Psychic Game </h1>
+<body background= "assets/images/background.png" style: imagesize="100%">
+	<div class="header">
+		<h1>Crystal Collector - The Game</h1>
 	</div>
-</header>
-<div class="container">
-	<div class="row">
-		<div class="col-md-9">
-			<ul id="space" class="list-group">
-				<li class="list-group-item" id="wins">Wins:</li>
-				<li class="list-group-item" id="lose">Losses:</li>
-				<li class="list-group-item" id="guessesLeft">Guesses Left:</li>
-				<li class="list-group-item" id="letter">Your Guesses so far:</li>
+	<div style="float:left; width: 45%;">
+	<div class="instructions">
+		<h3>How to play</h3>
+		
+		<ol>
+			<li style="font-style:bold">You will be given a random number at the start of the game or:<span>"Number To Get"</span></li>
+			<li style="font-style:bold">There are four crystals aside.</li>
+
+			<ul>
+				<li id="blue">Blue</li>
+				<li id="green">Green</li>
+				<li id="red">Red</li>
+				<li id="yellow">Yellow</li>
 			</ul>
-		</div>
-		<div class="col-md-3", class="center">
-			<ul id="space">
-				<img src="assets/images/Psychics.jpg">
-			</ul>
-		</div>
+			<li style="font-style:bold">By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+			<li style="font-style:bold">You win the game by matching your total score to the Number To Get.</li>
+			<li style="font-style:bold">You lose the game if your total score goes above the Number to Get.</li>
+			<li style="font-style:bold">The value of each crystal is hidden from you until you click on it.</li>
+			<li style="font-style:bold">Each time when the game starts, the game will change the values of each crystal.</li>
+		</ol>
 	</div>
-	<div class="row">
-		<h2>Guess a letter from A to Z, and try to beat the computer</h2>
+	<div class="numberToMatch">
+		<h2>Number To Get:
+			<span id= "randomNumber"></span>
+		</h2>
 	</div>
-	<div class="row">
-		<h3> </h3>
+	<div class="winsAndLosses">
+		<h2>Wins:
+			<span id= "numberWins"></span>
+			Losses: 
+			<span id= "numberLosses"></span>
+			
+		</h2>
 	</div>
 </div>
-
-<div class="footer">
-	2018 José Ramón Orozco - Homework 3 of Tecnologico de Monterrey's Coding Bootcamp &copy;
-</div>
-
-<!-- javascript.js -->
-<script type="text/javascript" src="assets/javascript/javascript.js"></script>
+	<div class="left-panel">
+		<div class="gems">
+			
+					<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
+					<img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
+					<img src="assets/images/red.png" class=gemImage id= "three" alt="Red Gem">
+					<img src="assets/images/yellow.png" class=gemImage id= "four" alt="Yellow Gem">				
+		</div>
+	<div class="userTotal">
+		<h2 style="font-size: 25px">Your total score is:
+			<span id="finalTotal" style="font-size: 28px"></span>
+		</h2>
+	</div>
+	</div>
+	
+	<footer class="footer">
+			&copy; Developed by José Ramón Orozco for Tecnológico de Monterrey's Coding Bootcamp - 2018 Assignment 4
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
