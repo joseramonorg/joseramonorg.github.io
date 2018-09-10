@@ -1,107 +1,158 @@
-/* General Elements*/
-
-div{
-	background-image: null;
-	margin: 10px;
-	width: 25%;
-	color: aliceblue;
-	font-size: 15px;
+.container {
+	margin-top: 0px;
+	margin-left: 150px;
+	height: 100%;
+	border-radius: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+}
+
+.row {
+	margin-left: 20px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+	padding-bottom: 0px;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+li {
 	
-}
-div{
-	border: solid 2px antiquewhite;
-	padding: 10px;
-	line-height: 1.6;
-}
-h1, h3, span{
-	font-weight: bold;
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+	padding-bottom: 0px;
 	font-size: 15px;
-	background-image: null;
-}
-h1{
-	font-size: 30pt;
-	color: white ;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	background-image: null;
-}
-ol{
-	list-style: decimal inside; 
-}
-ul {
-	list-style: disc inside;
-	text-indent: 20px;
-}
-/* Specfic Elements*/
-div.header, div.gems{
-	background-color: null;
-}
-div.header, div.instructions{
-	width: 100%;
-	border:none;
-}
-
-footer{
-	 clear: both;
-	 text-align: center;;
-	 color: white;
-	 font-weight: bold;
-	 position: relative;
-	 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	 
-}
-
-/* Classes */
-.numberToMatch, .winsAndLosses{
-	float: left;
-	width: 40%;
-	height: 20px;
-	position: center
-}
-.userTotal{
-	width: 45%;
-	height: 20px;
-	border:none;
-	text-align: center;
 	
 }
 
-.left-panel{
-	float:right;
-	width: 45%;
-	border:none;
+.background {
+	
+	
+		/* Full height */
+		height: 100%; 
+		/* Center and scale the image nicely */
+	
+		background-size: 1500px 740px; 
+
+
+	
+
 }
-.gems{
-	border:none;
-	clear: both;
-	width: 90%;
-	position: center;
-	background-color: white
+.titulo {
+
+	overflow: hidden;
+	min-width:1100px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
 }
-.gemImage{
-	height: 120px;
-	margin: 10px;
+
+
+h1, h2 {
+font-family: Quicksand;
 }
-/* IDs of colors in the list */
-#blue{
-	color: #3092c7;
-	font-style: bold;
-	font-size: 20px;
+
+.hidden { display: none; }
+
+
+#image-holder {
+
+
+margin: auto;
+padding-top: 50px;
+padding-bottom: 100px;
+
+max-width: 400px;
+max-height: 400px;
+
+
+text-align: center;
+
+float: none;
+
 }
-#green{
-	color: #00aa59;
-	font-style: bold;
-	font-size: 20px;
+
+#questionArea .col-md-12 {
+	padding-bottom: 0px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+	margin-left: 50px;
+	font-size: 10px;
 }
-#red{
-	color: #ec4b5f;
-	font-style: bold;
-	font-size: 20px;
+
+#gameOverArea .col-md-12 {
+	padding-bottom: 30px;
 }
-#yellow{
-	color: #ffc225;
-	font-style: bold;
-	font-size: 20px;
+
+#startOverText {
+	text-align: center;
+	padding-top: 30px;
+}
+
+#answerArea{
+	padding-bottom: 0px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+	margin-left: 50px;
+	font-size: 10px;
+}
+
+
+
+h1.hvr-grow:hover,
+h1.hvr-grow:focus,
+h1.hvr-grow:active {
+    transform: scale(1.2);
+}
+
+.btn, .btn:active, .btn:visited {
+	margin: auto;
+	margin-top: 300px;
+	height: 100px;
+	width: 200px;
+	display: block;
+	background: black;
+    font-size: 20px;
+	border-style: solid;
+    border-width: 5px;
+	border-color: black;
+	color: white;
+	
+	
+}
+
+.btn:hover {
+	background-color: white;
+	color: black;
+}
+
+
+
+.btnAnswer, .btnAnswer:active, .btnAnswer:visited {
+	margin: auto;
+	height: 80px;
+	width: 200px;
+    font-size: 20px;
+	border-style: solid;
+    border-width: 5px;
+	text-overflow: all;
+	background: white;
+	border-color: green;
+	color: red;
+  	display: flex;
+    justify-content:center;
+    align-content:center;
+	flex-direction:column;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	
+	
+}
+
+.btnAnswer:hover {
+	background-color: red;
+	color: white;
+	border-color: green;
+	cursor: pointer;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }

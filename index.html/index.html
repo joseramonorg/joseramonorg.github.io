@@ -1,0 +1,114 @@
+<!DOCTYPE html >
+<html>
+
+
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Trivia Game</title>
+
+	<!-- Bootstrap & ViewPort for responsiveness-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+
+</head>
+
+<!-- part client sees -->
+<body background= "../assets/images/background_palacionNAL.png" class="background">
+<div class="container">
+		<h1 class="titulo"> Viva México!!! Trivia Game </h1>
+	</div>
+<!-- start -->	
+	<div id="pregameArea">
+		<button type="button" id="startButton" class="btn">
+			<span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start!
+		</button>
+	</div>
+<!-- questions-->
+	<div id=questionArea class="hidden lightpadding">
+		<div class="row">
+			<div id="timeRemainingDiv" class="col-md-12">
+				<h1 id="timeRemainingText"> Time Remaining:<h1> 
+			</div> 
+		</div>
+		<div class="row">
+			<div id="questionDiv" class="col-md-12">
+				<h1 id="questionText">Question</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div id="answer1Div" class="col-md-3 ">
+				<li id="answer1Text" class="text-center btnAnswer">Answer1</li>
+			</div>
+			<div id="answer2Div" class="col-md-3 ">
+				<li id="answer2Text" class="text-center hvr-grow btnAnswer">Answer2</li>
+			</div>
+			<div id="answer3Div" class="col-md-3 ">
+				<li id="answer3Text" class="text-center hvr-grow btnAnswer">Answer3</li>
+			</div>
+			<div id="answer4Div" class="col-md-3 ">
+				<li id="answer4Text" class="text-center hvr-grow btnAnswer">Answer4</li>
+			</div>
+		</div>
+	</div>
+<!-- answers-->
+
+	<div id="answerArea" class="hidden lightpadding">
+		<center>
+		<div class="row">
+			<div class="col-md-12">
+				<h1 id="answerCorrectIncorrect">Out of Time!</h1>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h1 id="timeRemainingTextAnswers"></h1>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h1 id="correctAnswer"></h1>	
+			</div>
+		</div>
+		<div class="row">
+			<div id="image-holder" class="col-md-8">
+			</div>
+		</div>	
+		</center>			
+	</div>
+
+<!-- game over -->
+	<div id="gameOverArea" class="hidden lightpadding">
+		<div class="row">
+			<div class="col-md-12">
+				<p id="timeRemainingTextGameOver"></p>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<p>All done, heres how you did!</p><br>
+				<p id="correctAnswered">Correct Answers: </p>
+				<p id="incorrectAnswered">Incorrect Answers: </p>
+				<p id="unansweredAnswered">Unanswered Answers: </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h1 id="startOverText" class="hvr-grow">Start Over?</h1>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="../assets/javascript/app.js" type="text/javascript"></script>
+
+</html>
