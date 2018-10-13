@@ -1,0 +1,3 @@
+# Responsive-Portfolio
+Tarea 2 (parte 2) - Portfolio Responsivo 
+En esta parte de la tarea lo que utilice fueron media queries y la linea de código <meta name="viewport" content="width=device-width, initial-scale=1.0"> para hacer responsiva la página en otros dispositivos. Esto lo vimos durante una clase, utilice la escala 1.0 debido a que, con base en la explicación entregada en clase (y que entendí) así debe hacerse. Adicionalmente en: https://www.w3schools.com/css/css_rwd_viewport.asp mencionan que así es como debe de hacerse.
