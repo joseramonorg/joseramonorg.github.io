@@ -1,14 +1,15 @@
-body { color: aliceblue
+body { color: white;
+	  
     /*background-image: url("images/background.png");
     background-repeat: repeat;*/
 }
 
 .title-round{
-	background-color: #10A6C0;
-	border: 5px solid #10A6C0;
+	background-color: navy;
+	border: 5px solid navy;
     padding: 5px;
     color: white;
-    font: 20px bold;
+    font: 15px bold;
     -webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px;
@@ -16,10 +17,10 @@ body { color: aliceblue
 
 
 .profile-picture{
-	  -webkit-border-radius: 400px;
-	-moz-border-radius: 400px;
-	border-radius: 400px;
-	border: 3px #10A6C0 dashed;
+	  -webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+	border-radius: 300px;
+	border: 3px white dashed;
 	padding: 1px;
 }
 
@@ -29,8 +30,8 @@ body { color: aliceblue
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  background-color: #10A6C0;
+  padding: 0rem;
+  background-color: black;
   text-align: center;
 }
 
@@ -47,15 +48,15 @@ a.navbar-brand:hover{
 	 -webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px;
-	padding: 5px;
+	padding: 2px;
 }
 
 a.active{
-	border: 2px dashed #10A6C0;
+	border: 3px dashed navy;
 	 -webkit-border-radius: 100px;
 	-moz-border-radius: 100px;
 	border-radius: 100px;
-	padding: 5px;
+	padding: 2px;
 }
 
 a:visited{
